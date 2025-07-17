@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
         GrafoCiudades grafo = new GrafoCiudades();
         boolean seguir = true;
-        while (true) {
+        while (seguir) {
             System.out.println("Ciudades disponibles:");
             for (String ciudad : grafo.getCiudades()) {
                 System.out.println("- " + ciudad);
@@ -14,10 +14,10 @@ public class Main {
 
             Scanner tcl = new Scanner(System.in);
             System.out.print("\nCiudad de origen: ");
-            String origen = tcl.nextLine().trim();
+            String origen = tcl.nextLine();
 
             System.out.print("Ciudad de destino: ");
-            String destino = tcl.nextLine().trim();
+            String destino = tcl.nextLine();
 
             int distancia = grafo.obtenerDistancia(origen, destino);
 
@@ -37,16 +37,8 @@ public class Main {
                 if (opcion.equalsIgnoreCase("n")) {
                     System.out.println("Saliendo...");
                     seguir = false;
-
                 }
-            }
-            
-
-        }
-        
-
-        
-
-    }
-    
+            }            
+        }                
+    }    
 }

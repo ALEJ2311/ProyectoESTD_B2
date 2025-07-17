@@ -53,18 +53,5 @@ public class GrafoCiudades {
         } else {
             return "No disponible";
         }
-    }
-
-    public void mostrarMatrizAdyacencia() {
-        System.out.println("\nMatriz de adyacencia:");
-        for (String origen : grafo.keySet()) {
-            System.out.print(origen + "\t");
-            for (String destino : grafo.keySet()) {
-                Integer distancia = grafo.get(origen).get(destino);
-                System.out.print((distancia != null ? distancia : "-") + "\t");
-            }
-            System.out.println();
-        }
-    }
-
+    }    
 }

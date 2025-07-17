@@ -53,5 +53,15 @@ public class GrafoCiudades {
         } else {
             return "No disponible";
         }
-    }    
+    }
+
+    public void eliminarRuta(String a, String b) {
+        if (grafo.containsKey(a)) {
+            grafo.get(a).remove(b);
+        }
+        if (grafo.containsKey(b)) {
+            grafo.get(b).remove(a);
+        }
+    }
+
 }

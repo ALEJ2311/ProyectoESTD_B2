@@ -63,7 +63,7 @@ public class Main {
                     String eliminarDestino = tcl.nextLine();
 
                     grafo.eliminarRuta(eliminarOrigen, eliminarDestino);
-                    System.out.println("Ruta eliminada (si existía).");
+                    System.out.println("Ruta eliminada.");
                     break;
 
                 case "4":

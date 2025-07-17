@@ -9,12 +9,12 @@ public class Main {
         boolean seguir = true;
 
         while (seguir) {
-            System.out.println("\n=== Menú ===");
+            System.out.println("\n=== Menu ===");
             System.out.println("1. Consultar distancia entre ciudades");
-            System.out.println("2. Añadir nueva ruta");
+            System.out.println("2. Anadir nueva ruta");
             System.out.println("3. Eliminar una ruta");
             System.out.println("4. Salir");
-            System.out.print("Elija una opción: ");
+            System.out.print("Elija una opcion: ");
             String opcion = tcl.nextLine();
 
             switch (opcion) {
